@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<head>
+        <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400&display=swap" rel="stylesheet">
+    <style>
+            body {
+                font-family: 'Poppins', sans-serif;
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                overflow-x: hidden;
+                min-height: 100%;   
+                        
+            }
+
+            .sidenav {
+                background-color: #fff;
+                display: flex;
+                flex-direction: column;
+                height: 100vh;
+                position: fixed;
+                overflow-x: hidden;
+                justify-content: flex-end;
+            }
+
+            .sidenav a {
+                text-decoration: none;
+                color: #222;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 200;
+            }
+
+            .sidenav a:first-child {
+                text-align: end;
+                margin-top: 0;
+                margin-bottom: auto;
+                padding-top: 5vh;
+            }
+            
+            .sidenav a:last-child {
+                padding-bottom: 5vh;
+            }
+
+            .nav-item {
+                width: 70px;
+                padding: 4vh 0;
+                transform: rotate(-90deg);
+                cursor: url("http://www.rw-designer.com/cursor-view/90904.gif"), pointer;
+            }
+
+            .header {
+                position: fixed;
+                top: 70px;
+                left: 2vw;
+                width: 600px;
+                height: 200px;
+                padding-left: 67px;
+                font-size: 130px;
+                font-weight: 200;
+            }    
+            
+            .courses {
+                /* display: grid;
+                grid-template-columns: repeat(4,1fr);
+                grid-gap: 25px; */
+                display: flex;
+                flex-wrap: wrap;
+                text-align: center;
+                justify-content: space-between;
+
+                font-size: 40px;
+                font-weight: 100;
+                padding-top: 19vw;
+                padding-left: 30px;
+                padding-right: 30px;
+                margin-left: 70px;
+
+            }    
+
+            .course1 {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 300px;
+                height: 350px;
+                background-image: url('66810879_165781381139757_887401208606310892_n.jpg')       
+        
+            }
+
+            .course1:hover {
+                font-size: 0;
+
+            }
+
+            .course1:hover::after {
+                content: attr(data-hover1);
+                padding: 20px;
+                font-size: 20px;
+                line-height: 28px;
+                font-weight: 200
+
+            }
+
+            .course2 {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 300px;
+                height: 350px;   
+                background-image: url('66810879_165781381139757_887401208606310892_n.jpg')  
+
+            }
+
+            .course2:hover {
+                font-size: 0;
+
+            }
+
+            .course2:hover::after {
+                content: attr(data-hover2);
+                padding: 20px;
+                font-size: 20px;
+                line-height: 28px;
+                font-weight: 200
+
+            }
+
+            .course3 {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 300px;
+                height: 350px;
+                background-image: url('66810879_165781381139757_887401208606310892_n.jpg')
+        
+            }
+
+            .course3:hover {
+             font-size: 0;
+
+            }
+
+            .course3:hover::after {
+                content: attr(data-hover3);
+                padding: 20px;
+                font-size: 20px;
+                line-height: 28px;
+                font-weight: 200
+
+            }
+
+            .course4 {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 300px;
+                height: 350px;
+                background-image: url('66810879_165781381139757_887401208606310892_n.jpg')  
+                
+            }   
+            
+            .course4:hover {
+                font-size: 0;
+
+            }
+
+            .course4:hover::after {
+                content: attr(data-hover4);
+                padding: 20px;
+                font-size: 20px;
+                line-height: 28px;
+                font-weight: 200
+
+           }
+
+           @media only screen and (max-width: 375px) {
+            .header {
+                position: fixed;
+                top: 70px;
+                left: 2vw;
+                width: 600px;
+                height: 200px;
+                padding-left: 67px;
+                font-size: 40px;
+                font-weight: 200;
+            }    
+           }
+    </style>
+
+</head>
+<body>
+        <title>fanny.</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+        <nav class="sidenav">
+
+                <nav class="sidenav">
+                        <a href="../index.html">
+                            <div class="nav-item">saftd.</div>
+                        </a>
+                        <a href="../sigge/index.html">
+                            <div class="nav-item">sigge.</div>
+                        </a>
+                        <a href="../fanny/index.html">
+                            <div class="nav-item">fanny.</div>
+                        </a>
+                        <a href="../david/index.html">
+                            <div class="nav-item">david.</div>
+                        </a>
+                        <a href="../august/index.html">
+                            <div class="nav-item">august.</div>
+                        </a>
+                        <a href="../tony/index.html">
+                            <div class="nav-item">tony.</div>
+                        </a>
+                    </nav>
+    </nav>
+
+    <div class="header">fanny.</div>
+   
+   
+    <div class="courses">
+            <div class="course1" data-hover1="SILVERSMITHING IS INTERESTING TO ME SINCE I AM FASCINATED ABOUT THE ENTIRE PROCESS OF MAKING A HEAVY MATERIAL INTO SOMETHING SMALL AND UNIQUE">SILVER</div>
+            <div class="course2" data-hover2="I WOULD LOVE TO KNOW MORE ABOUT MUSIC PRODUCTION TO UNDERSTAND ALL WHAT IS BEHIND IT AND CREATE A NEW HOBBY FOR MYSELF">MUSIC</div>
+            <div class="course3" data-hover3="VIDEO EDITING AND ANIMATION WAS SOMETHING I WAS BRIEFLY INTRODUCED TO AT A PREVIOUS WORK PLACE AND SOMETHING I WOULD LIKE TO EXPLORE FURTHER">VIDEO</div>
+            <div class="course4" data-hover4="SEWING IS A SKILL I DID A LOT WHEN I WAS YOUNGER, AND SOMETHING I AM AIMING TO BECOME BETTER AT TO ADJUST MY CLOTHES IN THE WAY I WANT">SEWING</div>
+        </div>
+</body>
+</html>

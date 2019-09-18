@@ -1,0 +1,341 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /*background-image: url("elegant-white-background-with-shiny-lines_1017-17580.jpg");*/
+    font-family: 'poppins', sans-serif;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    object-fit: cover;
+    scroll-behavior: smooth;
+    background-image: linear-gradient(lightblue, white);
+    background-repeat: no-repeat;
+}
+
+.sidenav {
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: fixed;
+    z-index: 500;
+    font-size: 15px;
+    
+   /* -webkit-box-shadow: 12px 0 20px -12px rgba(0, 0, 0, 0.35);
+    box-shadow: 12px 0 20px -12px rgba(0, 0, 0, 0.35); */
+    }
+    
+    .sidenav a:first-child {
+        text-align: end;
+        margin-top: 0;
+        margin-bottom: auto;
+        padding-top: 5vh;
+    }
+
+    .sidenav a:last-child {
+        padding-bottom: 5vh;
+    }
+
+        
+        
+
+
+.sidenav a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.8);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+}
+
+.nav-item {
+    width: 70px;
+    padding: 4vh 0;
+    transform: rotate(-90deg);
+}
+
+.nav-item:hover {
+    color: black;
+    font-size: 17.5px;
+    transition: 0.1s;
+}
+
+.nav-item {
+    width: 70px;
+    padding: 4vh 0;
+    transform: rotate(-90deg);
+}
+
+.top-nav {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    width: 100vw;
+    text-decoration: none;
+    -webkit-box-shadow: 0 12px 20px -12px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 12px 20px -12px rgba(0, 0, 0, 0.35);
+    margin: auto;
+    
+}
+
+.top-nav-item {
+    padding: 10px;
+    color:white;
+    padding-left:70px;
+}
+
+.top-nav a {
+    text-decoration: none;
+}
+
+.course-page {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    z-index: +5;
+    background-attachment:absolute;
+    width:100vw;
+}
+
+
+
+.course-page-slogan {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    -webkit-box-shadow: 0 12px 20px -12px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 12px 20px -12px rgba(0, 0, 0, 0.35);
+    
+}
+
+
+.course-page-slogan h1 {
+    font-family: 'inter', sans-serif;
+    font-weight: light-beta;
+    padding-top: 20px;
+    justify-content: center;
+    font-size: 75px;
+    padding-left:70px;
+    COLOR:white;
+    
+   /* background-image: url("3Zu4.gif");
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color:rgba(255,255,255,0.9); */ 
+}
+
+.course-page-slogan-under {
+    justify-content: center;
+    padding-top: 125px;
+    position: absolute;
+    width: 100vw;
+}
+
+.course-page-slogan-under h2 {
+    display: flex;
+    font-family: 'poppins', sans-serif;
+    justify-content: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 20px;
+    background-image: url("giphy.gif");
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #00000047;
+}
+
+.course-page-slogan-under p {
+    padding-top: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+    line-height: 30px;
+}
+
+/* #kitesurfing {
+    background-image: url("skydive.jpg");
+    height: 100vh;
+    z-index: 5;
+} */
+
+#section-1 {
+    height: 100vh;
+}
+
+.section-2 {
+    height: 100vh;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 25vw);
+    grid-template-rows: repeat(2, 25vw);
+    grid-gap: 20px;
+    justify-content: center;
+    margin-top: -690px;
+    margin-bottom: 100px;
+    padding-left:70px;
+}
+
+.hover h3{
+    font-family: poppins;
+    font-size:1.8vw;
+    color:white;
+    text-align:center;
+    background-color: rgba(0,0,0,0.5);
+    width: 25vw;
+    height:25vw;
+    margin-top:auto;
+    z-index:+1000;
+}
+
+.hover p{
+    font-family: poppins;
+    font-size: 1.5vw;
+    color:white;
+    text-align:center;
+    max-width:25vw;
+    height:25vw;
+    margin-top:-150px;
+    background-color:Transparent;
+}
+
+.hover h3:hover{
+    background-color: rgba(255, 255, 255, 0.116);
+    transition:0.75s;
+    z-index:500;
+}
+
+
+
+.gallery-img-1 {
+    grid-column: 1;
+    grid-row: 1;
+    background-image: url("skydive.jpg");
+    background-size: cover;
+    -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+}
+
+.gallery-img-2 {
+    grid-column: 2;
+    grid-row: 1;
+    background-image: url("kitesurf.jpg");
+    background-size: cover;
+    -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+}
+
+.gallery-img-3 {
+    grid-column: 3;
+    grid-row: 1;
+    background-image: url("climbing.jpg");
+    background-size: cover;
+    -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+}
+
+.gallery-img-4 {
+    grid-column: 1;
+    grid-row: 2;
+    background-image: url("cooking.jpg");
+    background-size: cover;
+    -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+}
+
+.gallery-img-5 {
+    grid-column: 2;
+    grid-row: 2;
+    background-image: url("diving.jpg");
+    background-size: cover;
+    -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+}
+
+.gallery-img-6 {
+    grid-row: 2;
+    grid-column: 3;
+    background-image: url("sailing.jpg");
+    background-size: cover;
+    -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+}
+
+.hover:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.1);
+    transition: 0.3s;
+    -webkit-box-shadow: 0 12px 20px -12px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 12px 20px -12px rgba(0, 0, 0, 0.35);
+}
+
+.gallery-phone {
+    display: none;
+}
+
+.course-page-slogan-under ul {
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+    .gallery-container {
+        display: grid;
+        grid-template-columns: repeat(1, 320px);
+        grid-template-rows: repeat(6, 320px);
+        grid-gap: 0px;
+        /* justify-content: center; */
+        margin-top: -600px;
+        margin-bottom: 0px;
+       
+    }
+
+    .hover p, .hover h3 {
+        
+        width: 320px;
+        height: 320px;
+        font-size: 1.3rem;
+        
+    }
+.hover p {
+    display: absolute;
+    margin-left: 25%;
+
+}
+
+    .gallery-img-1 {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .gallery-img-2 {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .gallery-img-3 {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .gallery-img-4 {
+        grid-column: 1;
+        grid-row: 4;
+    }
+    .gallery-img-5 {
+        grid-column: 1;
+        grid-row: 5;
+    }
+    .gallery-img-6 {
+        grid-column: 1;
+        grid-row: 6;
+    }
+}
