@@ -11,8 +11,16 @@
 
 <body>
 
-    <canvas id="myChart"></canvas>
-
+    <div class="container">
+        <canvas id="myChart"></canvas>
+        <div class="buttons--container">
+            <button onclick="loadChart('Apple')">Apple</button>
+            <button onclick="loadChart('Alphabet')">Google</button>
+            <button onclick="loadChart('Facebook')">Facebook</button>
+            <button onclick="loadChart('Tesla')">Tesla</button>
+            <button onclick="loadChart('Amazon')">Amazon</button>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <script src="script.js"></script>
 </body>

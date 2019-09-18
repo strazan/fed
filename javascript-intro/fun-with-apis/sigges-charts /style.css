@@ -9,5 +9,31 @@ body {
     width: 100%;
     background-color: #333;
     font-family: 'Courier New', Courier, monospace;
+    display: relative;
+}
 
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 1000px;
+    height: 600px;
+    margin-left: -500px;
+    margin-top: -300px;
+}
+
+.buttons--container {
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+
+}
+
+.buttons--container button {
+    background-color:rgb(255, 99, 132);
+    color: #fff;
+    font-size: 1rem;
+    border: 0;
+    height: 5vh;
+    width: 19%;
 }
