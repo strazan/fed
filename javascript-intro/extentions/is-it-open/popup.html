@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
+  <title>Is it open?</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 9px;
+      background-color: salmon;
+      color: #fff;
+      font-family: 'Roboto', sans-serif;
+      width: 300px;
+    }
+
+    #popup--title {
+      font-size: 25px;
+      font-weight: 500;
+    }
+
+    #input--form {
+      width: 286px;
+      border: none;
+      height: 25px;
+      font-size: 15px;
+      color: #fff;
+      padding-left: 10px;
+      background-color: transparent;
+      border: 1px solid #fff;
+    }
+
+    #input--form::placeholder {
+     
+      color: rgba(255, 255, 255, 0.742);
+    }
+
+    #check--open-hours {
+      height: 25px;
+      background-color: transparent;
+      border: 1px solid #fff;
+      margin: 5px 0 0 0;
+      width: 100%;
+      color: rgb(0, 0, 0);
+      font-size: 15px; 
+     
+    }
+
+    #output--open-hours {
+      margin: 0 0 5px 0;
+      font-size: 14px;
+      color: rgb(242, 242, 242);
+    }
+
+    .pac-item-selected {
+      color: #fff;
+    }
+
+    .pac-item {
+      background-color: transparent;
+    }
+
+    .pac-item-query {
+      color: #000;
+      margin-left: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="popup--canvas">
+    <h2 id="popup--title">Is it open?</h2>
+    <input placeholder="search" type="text" id="input--form">
+    <!-- <button id="check--open-hours">check</button> -->
+    <h2 id="output--isOpen"></h2>
+    <div id="output--open-hours"></div>
+  </div>
+  <!-- <script src="googl-lib.js"></script> -->
+  <script type="text/javascript"
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAz-Jj5QVTttCcbX27ZX_I0f2Ge06bTw-0&libraries=places"></script>
+  <script src="popup.js"></script>
+</body>
+
+</html>
