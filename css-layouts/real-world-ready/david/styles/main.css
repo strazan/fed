@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 16px ;
+  --section-title: 'Libre Baskerville', serif;
+  --body-text: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  min-height: 100%;
+  margin: 0 auto;
+  font-family: var(--body-text);
+  line-height: 1.3em;
+  max-width: 1200px;
+}
+
+.body-content {
+  margin: 5%;
+  padding-left: 10vw;
+}
+
+img {
+  display: block;
+}
+
+.sidenav {
+  display: none;
+}
+
+
+header {
+  display: block;
+}
+
+.headline-title {
+  font-size: 2.25rem;
+  font-family: var(--section-title);
+  line-height: 124%;
+}
+
+.subhead {
+  display: block;
+  font-size: 1.2em;
+  line-height: 146%;
+}
+
+[src*="assets/hawk_jawn.png"] {
+  float: left;
+  shape-outside: url('assets/hawk_jawn.png');
+  shape-margin: 10px;
+  width: 40vw;
+  max-width: 510px;
+}
+
+.course-description h2 {
+  font-family: var(--section-title);
+}
+
+#teacher-description {
+  background-color: rgb(12, 9, 9);
+  color: #ffffff;
+  padding: 1rem;
+  border-radius: 5px;
+  margin: 2rem auto;
+  max-width: 900px;
+  line-height: 144%;
+}
+
+.instructor {
+  color: rgb(190, 41, 190);
+  font-weight: 700;
+}
+
+@media (min-width: 400px)  {
+  .body-content {
+    margin: 5%;
+    padding-left: 15vw;
+    /* max-width: 1000px; */
+  }
+
+  [src*="assets/hawk_jawn.png"] {
+    width: 50vw;
+  }
+
+  .sticky-item {
+    display: block;
+    position: sticky;
+    width: 4rem;
+    max-width: 80px;
+    top: 12rem;
+    text-align: center;
+  }
+  
+  .sidenav {
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      height: 100vh;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      justify-content: flex-end;
+  }
+  
+  .sidenav ul {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between;  */
+  }
+  
+  .sidenav a {
+      text-decoration: none;
+      color: #222;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 200;
+      /* display: block; */
+      padding: 15px 0;
+  }
+
+  .sidenav a:first-child {
+    text-align: end;
+    margin-top: 0;
+    margin-bottom: auto;
+    padding-top: 5vh;
+}
+.sidenav a:last-child {
+    padding-bottom: 5vh;
+}
+  
+  .nav-item {
+      width: 70px;
+      padding: 3vh 20px;;
+      transform: rotate(-90deg);
+      /* cursor: url("http://www.rw-designer.com/cursor-view/90904.gif"), pointer; */
+      
+  }
+}
+
+@media (min-width: 1000px) {
+  [src*="assets/hawk_jawn.png"] {
+    shape-outside: url('assets/hawk_jawn.png');
+    shape-margin: 10px;
+    width: 45vw;
+  }
+
+  .headline-title {
+    font-size: 3rem;
+
+  }
+
+  .subhead {
+    font-size: 2em;
+
+  }
+
+}
