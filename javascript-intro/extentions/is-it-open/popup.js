@@ -7,7 +7,6 @@ var outputIsOpen = document.getElementById('output--isOpen');
 autocomplete.setTypes(['establishment']);
 
 document.addEventListener('DOMContentLoaded', function () {
-  // var button = document.getElementById('check--open-hours');
   autocomplete.addListener('place_changed', function () {
     checkOpenHours();
   });
