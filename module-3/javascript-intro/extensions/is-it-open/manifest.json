@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+
+  "name": "Is it open?",
+  "author": "Sigge - https://github.com/strazan",
+  "version": "1.0",
+  "description": "Check if your favourite store is open!",
+  "permissions": ["activeTab", "declarativeContent", "storage"],
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": ["popup.js"]
+    }
+  ],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": "images/open.png"
+    },
+    "content_security_policy": "script-src 'self' https://maps.googleapis.com; object-src 'self'"
+}

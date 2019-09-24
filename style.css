@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #333;
+    color: #fff;
+    font-family: 'Special Elite', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main--title {
+    margin-top: 7vh;
+    text-align: center;
+}
+
+.main--description {
+
+    margin: 10px;
+    /* color: #fff; */
+}
+
+.module--page--title {
+    margin-top: 7vh;
+    text-align: center;
+}
+
+.modules {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 70vh;
+    width: 100%;
+}
+
+.module {
+    position: relative;
+    max-width: 400px;
+    width: 80%;
+    height: 40%;
+    margin: 10px;
+    background-color: #fff;
+    text-decoration: none;
+}
+
+.module .module--number {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #000;
+}
+
+.module--title {
+    color: #000;
+    text-align: center;
+    text-justify: center;
+    margin-top: 20%;
+}
+
+/* module one. */
+.module--hello-world {
+    background-color: #fff;
+}
+
+/* module two. */
+.module--css-layouts {
+    background-image: url('https://s3.amazonaws.com/mk-website-media/wp-content/uploads/2018/10/19001752/Wallpaper-IngridMika-ContactGrid55-1.jpg');
+    background-size: cover;
+}
+
+/* module three. */
+.module--week-js {
+    background-image: url('https://colorlib.com/wp/wp-content/uploads/sites/2/Templating-Engines-for-JavaScript.png');
+    background-size: cover;
+    background-position: right bottom;   
+}
+
+.navigate--back {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.projects {
+    width: 95%;
+    max-width: 1000px;;
+    display: grid;
+    margin: 16px;
+    grid-gap: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    width: 100%;
+    height: 150px;
+    background: #fff;
+    font-size: 1.5rem;
+}
+
+@media (min-width: 650px) {
+    .navigate--back {
+        top: 30px;
+        left: 30px;
+    }
+    .projects {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .project {
+        height: 200px;
+    }
+}
+
+/* 
+    module one
+
+    m1p1 = module one, project 1
+*/
+.m1p1 {
+    background-image: url('https://scontent-arn2-1.cdninstagram.com/vp/258cbe0c8b2683c480122f56005d4199/5E359B96/t51.2885-15/e35/26222518_152672065518286_4241230932935180288_n.jpg?_nc_ht=scontent-arn2-1.cdninstagram.com&_nc_cat=110');
+    background-size: cover;
+    background-position: bottom;
+}
+
