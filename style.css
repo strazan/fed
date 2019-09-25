@@ -136,3 +136,24 @@ a {
     background-position: bottom;
 }
 
+/*
+    module three
+*/
+
+/*
+    module three, episode 1
+*/
+
+/*
+    module three, episode 2, FUN WITH APIS
+*/
+.m3e2p1 {
+    background-image: url('https://d.stockcharts.com/img/chart-carousel/carousel-chart-04.png');
+    background-size: cover;
+    color: #fff;
+}
+.m3e2p2 {
+    background-image: url('https://i.kym-cdn.com/entries/icons/original/000/013/564/doge.jpg');
+    background-size: cover;
+    color: #fff;
+}

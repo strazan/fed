@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h1>Dog API Usage</h1>
+        <button type="submit"  onClick="refreshPage()">New Doggo!</button>
+        <p>https://dog.ceo/api/breeds/image/random gives out a random dog picture everytime you reload it,<br> 
+            the picture is connected to the 'message' in the API.</p>
+    </head>
+    <body>
+<!-- The "randomDog" id fetches the information from the API and then print it on the website.-->
+        <img id="randomDog"></img>
+<!-- Below is the script for fetching the API info and transforming it to a useable element. -->
+        <script>
+            fetch('https://dog.ceo/api/breeds/image/random')
+                .then(function(response) {
+                    return response.json();
+                })
+                .then(function(data) {
+                    document.getElementById('randomDog').src = data.message
+                });
+        </script>
+<!-- Below is the script for the new dog button! -->
+        <script>
+                function refreshPage(){
+                    window.location.reload();
+                } 
+        </script>
+    </body>
+</html>
