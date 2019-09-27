@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: rgb(241, 147, 136);
+  padding: 160px;
+  padding-top: 30px;
+  font-family: "Fira Code", monospace;
+  font-weight: 300;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+@import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.207/distr/fira_code.css);
+
+
+img {
+  width: 400px;
+}
+
+h1 {
+  text-align: center;
+  text-transform: lowercase;
+}
+
+.picturetext {
+  display: inline-block;
+}
+
+.andytxt {
+  text-align: center;
+}
+
+.navbar {
+  overflow-y: scroll;
+}
+
+.navb {
+  scroll-snap-type: y mandatory:
+  text-align: right;
+  position: fixed;
+  top: 40vh;
+  z-index: 1;
+  display: flex;
+  right: 0;
+  float: right;
+}
+
+li {
+  display: inline;
+}
+ul li a {
+  display: block;
+  margin: 50px;
+  list-style: none;
+  text-decoration: none;
+  color: #333;
+  
+}
+
+.navb a:hover {
+  background-color: rgb(245, 140, 42);
+}
+
+section#picturetext {
+  display: flex;
+  background-color: rgba(60, 93, 129, 0.925);
+  height: 600px;
+  width: 100%;
+}
+
+section#picturetext p {
+  position: relative;
+  text-align: center;
+  padding: 100px;
+}
+
+section#second {
+  display: flex;
+  background-color: rgb(116, 209, 147);
+  height: 600px;
+  width: 100%;
+  /* background: url(images/golf.jpg);
+  background-size: 100%; */
+
+}
+section#second p {
+  position: relative;
+  text-align: center;
+  padding: 50px;
+  padding-right: 300px;
+  color: rgb(148, 101, 209);
+
+}
+
+/* .golfpic {
+  margin: 200px;
+  width: 300px;
+} */
+section#third {
+  display: flex;
+  background-color: rgb(145, 174, 206);
+  height: 600px;
+  width: 100%;
+}
+section#third p {
+  position: relative;
+  text-align: center;
+  padding: 100px;
+  color: rgb(22, 57, 94);
+}
+section#fourth {
+  display: flex;
+  background-color: rgb(171, 145, 206);
+  height: 600px;
+  width: 100%;
+}
+section#fourth p {
+  position: relative;
+  text-align: center;
+  padding: 50px;
+  color: rgb(106, 209, 141);
+}
+
+.rollIn {
+  animation-duration: 3s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+}
+
+.hobbies {
+  display: flex;
+  text-align: center;
+
+}
+
+i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+    padding-top: 3px;
+    margin-top: 150px;
+    margin-left: 50px;
+    margin-right: 50px;
+    
+  
+}
+
+/* h2 {
+  margin-left: 450px;
+  margin-top: 250px;
+  
+} */
+
+/* h2 {
+  padding-left: 450px;
+  padding-top: 250px;
+} */
+h2 {
+  padding-left: 35vw;
+  padding-top: 35vh;
+}
+
+.videolink {
+    color: rgb(106, 209, 141);
+}
+.photolink {
+    color: rgb(248, 153, 45);
+}
+.golflink {
+    color: rgb(250, 252, 126);
+}
